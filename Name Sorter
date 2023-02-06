@@ -1,0 +1,74 @@
+//Start
+#include <iostream>
+#include<string>
+using namespace std;
+
+void showArray(string array[], int SIZE);
+void selectionSort(string array[], int NUM_NAMES);
+
+//I am just describing for 5, modify for 20 with values as shown
+int main()
+{
+    cout << "Jerry Ortega's Name Sorter\n" << endl;
+     //print your headers
+     const int SIZE=20;//this is to be modified
+     string names[SIZE]={"Collins, Bill", "Smith, Bart", "Allen, Jim", "Griffin, Jim", "Stamey, Marty", "Rose, Geri", "Taylor, Terri", "Johnson, Jill", "Allison, Jeff", "Looney, Joe", "Wolfe, Bill", "James, Jean", "Weaver, Jim", "Pore, Bob", "Rutherford, Greg", "Javens, Renee", "Harrison, Rose", "Setzer, Cathy", "Pike, Gordon", "Holland, Beth"};//this also has to be modified
+     selectionSort(names,SIZE);
+
+     //End
+     cin.get();
+     cin.ignore();
+     return 0;
+}
+
+//a function to display the elements of the array
+//input argument array and SIZE, which is number of strings in array
+void showArray(string array[], int SIZE)
+{
+    //ierate through the array
+    for(int i=0;i<SIZE;i++)
+    {
+        //display each string in a new line
+        cout<<array[i]<<endl;
+    }
+}
+
+//a selectionSort function with array and num of names in array as input argument
+void selectionSort(string array[], int NUM_NAMES)
+{
+    //startScan is just a variable for iterating through list
+    //minIndex is for holding the lower index every time
+    int startScan, minIndex;
+
+    //minValue will hold the smaller string
+    string minValue;
+
+    //iterate through the array
+    for(startScan = 0; startScan < (NUM_NAMES -1); startScan++)
+    {
+         //assign the startScan value as minIndex, just for initialisation
+         minIndex = startScan;
+         //minValue will be value at minIndex, this is just for initialisation
+         minValue = array[startScan];
+         //now, pick all elements after the selected element at the moment
+
+         for(int index = startScan +1; index < NUM_NAMES; index++)
+         {
+             //if that element is less(smaller) than selected element
+             if (array[index] < minValue)
+             {
+                 //select that particular element, and continue the process
+                 minValue = array[index];
+                 minIndex = index;
+             }
+
+         }
+
+             //swap the minIndex and startScan values , minValue has the value at minIndex
+             array[minIndex] = array[startScan];
+             array[startScan] = minValue;
+    }
+
+    //function to display the array
+    showArray(array,NUM_NAMES);
+}
