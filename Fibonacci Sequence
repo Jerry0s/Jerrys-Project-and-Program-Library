@@ -1,0 +1,61 @@
+//Start
+#include<iostream>
+#include<iomanip>
+using namespace std;
+
+//Declarations
+void nextFibo(int& f1,int& f2);
+
+int main()
+{
+    int n;//n to store number of fibonacci number in series
+
+    int f1=0,f2=1;//declaring initial 2 fibonacci numbers
+
+    cout << "How many numbers in the Fibonacci Sequence do you want to display? : ";
+    cin >> n;
+
+    //checking if number of terms is valid or not, and then asking again in case of invalid
+    while(n<1 || n>46)
+    {
+        cout << "Retry! term count should be in range 1 to 46 : ";
+        cin >> n;
+    }
+    cout<<"Fibonacci sequence is : "<<endl;
+
+    for(int i=0;i<n;i++)
+    {
+        //for first fibonacci number in series
+        if(i==0)
+        cout<<f1<<endl;
+
+        //for second number in series
+        else if (i==1)
+        cout<<f2<<endl;
+
+        //further on, each time f1 will hold (i-1) th term, and f2 will hold ith term
+        else
+        {
+            nextFibo(f1,f2);
+            cout<<f2<<endl;
+        }
+    }
+
+    //End
+    cin.get();
+    cin.ignore();
+    return 0;
+}
+
+//declaration and definition of a function nextFibo
+void nextFibo(int& f1,int& f2)
+{
+    int temp=f2;
+
+    //assign the f2 to be sum of f1 and f2, f2 will hold nextFibo in series
+    f2=f2+f1;
+
+    //assign f1 to f2, it will have previous Fibo in series in series
+    f1=temp;
+}
+
