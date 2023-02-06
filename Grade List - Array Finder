@@ -1,0 +1,63 @@
+//Start
+#include <iostream>
+#include <iomanip>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <errno.h>
+using namespace std;
+
+int* function_a(int array[], int size)
+{
+	int* new_array = new int[2*size];
+	int i;
+	for(i=0;i<size;i++)
+        {
+            new_array[i]=array[i];
+        }
+	for(i=size;i<2*size-1;i++)
+        {
+            new_array[i]=0;
+        }
+
+	return new_array;
+
+}
+
+int main(void)
+{
+	FILE* fp=fopen("GradeList.txt","r");
+	int num, array[99],size;
+	size=0;
+	while(fscanf(fp,"%d",&num)==1)
+        {
+            array[size]=num;
+            size++;
+        }
+
+	printf("Jerry Ortega's Array Expander\n");
+	printf("Original array size: %d\n",size);
+	printf("\nOriginal array: [ ");
+	for (int i=0;i<size;i++)
+        {
+            printf("%d ",array[i]);
+        }
+
+	printf("]\n");
+
+	int* newarray = function_a(array, size);
+
+	printf("\nNew array size: %d\n",2*size);
+	printf("\nNew array: [ ");
+	for (int i=0;i<2*size;i++)
+        {
+            printf("%d ",newarray[i]);
+        }
+
+	printf("]\n");
+
+    cin.ignore();
+	cin.get();
+	return 0;
+
+}
