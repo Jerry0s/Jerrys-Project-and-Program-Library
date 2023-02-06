@@ -1,0 +1,94 @@
+#include <iostream>
+//including fstream for file operations
+#include <fstream>
+// for rounding the decimals
+#include <iomanip>
+using namespace std;
+//main function & Start
+
+int main()
+{
+    /*
+    We will make a file object, then we will open the file
+    If file fails to be opened succesfully the File object will be False
+    We will exit and display the corresponding error message
+    In the other case, we will keep on reading till end of file
+    we will add the read number everytime to a variable sum, and
+    for every number read, we will increment the counter
+    then at end we will display average by dividing the sum by count
+    For minimum and max, we will initialise the first number read as min and max both
+    Then for next every number, we will compare with min and max, if a smaller value than min comes
+    we will assign it to min, or if a larger value than max comes, we will assign it to The
+    max
+    */
+
+    //Declarations
+    //initialising sum and count as 0
+    int sum=0,count=0;
+
+    //x will be used for reading number, min and max, will be used to store min and max values
+    int x,min,max;
+    float average;
+
+    //creating myFile named File object
+    fstream myFile;
+
+    //opening file using declared file object
+    myFile.open("Random.txt");
+
+    //if file fails to open or file was not found
+    if (!myFile)
+    {
+    cout << "\nUnable to open file random.txt\n";
+    return(0);   // call system to stop
+    }
+
+    //reading the first number from file
+    myFile>>x;
+
+    //adding that number to sum
+    sum=sum+x;
+
+    //assign min and max to that number for now
+    min=x;
+    max=x;
+
+    //increment count- will indicate the number of numbers read
+    count=count+1;
+
+    //traverse through end of the the file, and keep storing the read number in x
+    //x will be overwritten each time
+    while (myFile >> x)
+    {
+        //adding the read number to sum
+        sum = sum + x;
+        //increment count
+        count++;
+        //check if read number was smaller than number in min
+        if(min>x)
+            {
+            min=x;
+            }
+        //check if read number was greater than number in max
+        if(max<x)
+        {
+        max=x;
+        }
+    }
+
+    //getting the average of all the numbers
+    average=sum/count;
+
+    //printing the outputs required , customise the messages as per requirement
+    cout<<"Jerry Ortega's Statistics Program\n"<<endl;
+    cout<<"The number of numbers entered is "<<count<<endl;
+    cout<<"The largest value is "<<max<<endl;
+    cout<<"The smallest value is "<<min<<endl;
+    cout<<"The average value is "<< fixed << setprecision(4)<< average<<endl;
+
+
+    //End
+    cin.get();
+    cin.ignore();
+    return 0;
+}
