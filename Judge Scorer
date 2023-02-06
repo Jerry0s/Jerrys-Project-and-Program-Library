@@ -1,0 +1,148 @@
+#include <iostream>
+#include<iomanip>
+using namespace std;
+
+//declaration and definition of function getJudgeData with reference variable score
+//it will update the value of score in main, we will call this function five times, to get 5 scores
+void getJudgeData(float& score)
+{
+
+     cout<<"Enter Score from a Judge: ";
+     cin>>score;
+
+ //while the score remains invalid, prompt the user to enter valid score, along with error
+     while(score<0 || score>10)
+     {
+         cout<<"That is an invalid score. Please try again."<<endl;
+         cout<<"The score must be from 0 to 10"<<endl;
+         cout<<"Enter Score from a Judge: ";
+         cin>>score;
+     }
+
+}
+
+//findLowest function, to get minimum value
+double findLowest(float s1,float s2,float s3,float s4,float s5)
+{
+     //assigning s1 to minimum
+     float min=s1;
+
+     //checking if any other score is smaller than s1, assigning it to min
+     if(s2<min)
+     {
+        min=s2;
+     }
+
+     if(s3<min)
+     {
+        min=s3;
+     }
+
+     if(s4<min)
+     {
+        min=s4;
+     }
+
+     if(s5<min)
+     {
+        min=s5;
+     }
+
+     //returing the smallest value
+ return min;
+}
+
+//function to get maximum value
+double findHighest(float s1,float s2,float s3,float s4,float s5)
+{
+     //assigning s1 to maximum
+     double max=s1;
+
+     //checking if any score is higher than s1, if so, assign that score to max
+     if(s2>max)
+     {
+        max=s2;
+     }
+
+     if(s3>max)
+     {
+        max=s3;
+     }
+
+     if(s4>max)
+     {
+        max=s4;
+     }
+
+     if(s5>max)
+     {
+        max=s5;
+     }
+
+    //return the max value
+     return max;
+}
+
+//function to calculate final by dropping high and low
+void calcScore(float s1,float s2,float s3,float s4,float s5)
+{
+     //assigning min and max to minimum and maximum values by calling findLowest and findHighest
+     float min=findLowest(s1,s2,s3,s4,s5),max=findHighest(s1,s2,s3,s4,s5);
+
+     //initilaising sum as 0
+     float sum=0;
+
+     //first lets total all scores, then we will subtract lowest adn highest
+     sum=s1+s2+s3+s4+s5;
+     sum=sum-min-max;
+
+     //printing final score with 2 decimal point precision
+     cout<<"The Mean of the 3 middle scores is: "<<setprecision(2)<<fixed<<sum/3;
+}
+
+int main()
+{
+    cout << "Jerry Ortega's Scoreboard" << endl;
+
+     //initilaising score as 1
+     float score=0;
+
+     //this will get 1st judge score in variable in score
+     getJudgeData(score);
+
+     //assigning that score to s1
+     float s1=score;
+
+     //this will get 2nd judge score in variable in score
+     getJudgeData(score);
+
+     //assigning that score to s2
+     float s2=score;
+
+     //this will get 3rd judge score in variable in score
+     getJudgeData(score);
+
+     //assigning that score to s3
+     float s3=score;
+
+     //this will get 4th judge score in variable in score
+     getJudgeData(score);
+
+     //assigning that score to s4
+     float s4=score;
+
+     //this will get 5th judge score in variable in score
+     getJudgeData(score);
+
+     //assigning that score to s5
+     float s5=score;
+
+     //calling calcScore that will print the final score of the performer
+     calcScore(s1,s2,s3,s4,s5);
+
+     // End
+     cin.get();
+     cin.ignore();
+     return 0;
+
+}
