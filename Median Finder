@@ -1,0 +1,82 @@
+//Start
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int returnMedian(int arr[], int n);
+
+int main()
+{
+    cout << "Jerry Ortega's Median Finder\n" << endl;
+
+     //file read object
+     ifstream myFile;
+
+     //initial count of terms as 0
+     int linecount=0;
+     int arr[200];
+
+     //choice for opening file
+     int choice;
+     cout<<"Enter '1' to open ODD terms file. Enter '2' to open EVEN terms file : ";
+     cin>>choice;
+
+     //opening corresponding file
+     if(choice==1)
+     myFile.open("GradeListO.txt");
+     else if(choice==2)
+     myFile.open("GradeListE.txt");
+     if(myFile.is_open())
+     {
+         while (!myFile.eof())
+         {
+             myFile>>arr[linecount];
+             linecount=linecount+1;
+         }
+         cout<<"Median is "<<returnMedian(arr,linecount);
+     }
+
+     else
+     cout<<"unable to open file";
+
+     cin.get();
+     cin.ignore();
+     return 0;
+}
+
+//a function that takes array and number of terms
+int returnMedian(int arr[], int n)
+{
+    //sorting the input array using bubble sort
+     int i, j,temp,rNum;
+
+     for (i = 0; i < n-1; i++)
+    {
+         // Last i elements are already in place
+         for (j = 0; j < n-i-1; j++)
+        {
+            if (arr[j] > arr[j+1])
+            {
+                 temp=arr[j];
+                 arr[j]=arr[j+1];
+                 arr[j+1]=temp;
+            }
+        }
+    }
+
+    //now, we have sorted array in arr , now we need to get median
+    //for even terms median is mean of central 2 terms
+    if(n%2==0)
+    {
+     //since indexing starts from 0, so n/2-1 will be first central term, and n/2 will be second
+     //check this on given sample list in question
+     rNum=(arr[(n/2)-1]+arr[(n/2)])/2;
+    }
+
+    else//other case n is odd
+    //central term is given by n-1/2 for n=5, indexes=0,1,2,3,4 , so central index is (5-1)/2=2
+    rNum=arr[(n-1)/2];
+    //returning the median
+    return rNum;
+
+}
