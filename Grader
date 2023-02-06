@@ -1,0 +1,84 @@
+//Start
+#include <iostream>
+#include <fstream>
+#include <iomanip>
+#include <vector>//for doing the task through array, you need to have this
+using namespace std;
+
+int main()
+{
+    cout << "Jerry Ortega's Grader\n" <<endl;
+    //vector to read student answers, for array you would have assigned as char studentAnswers[20],correctAnswers[20];
+    vector<char> studentAnswers;
+
+    //vector to read correct answers
+    vector<char> correctAnswers;
+
+    //2 file objects, to read studentAnswers and correctAnswers
+    ifstream myFile1,myFile2;//in array also, you would have created similar file objects
+    //one char variable to read answers
+    char x;//similar character variable for array also
+    //reading both files by their respective objects, be sure to have correct file name, this will be same for array part A too
+    myFile1.open("studentAnswers.txt");
+    myFile2.open("correctAnswers.txt");
+    //while you read the full of first file
+    while(!myFile1.eof())
+    {
+    	//read character
+        myFile1>>x;
+        //append that character to the corresponding vector , if you do this using array, you will have studentAnswers[i]=x,
+        //increment i everytime , be sure to initialise i to 0, before this loop
+        studentAnswers.push_back(x);
+    }
+    //for array part again initialise i to 0
+    //similarly, for second file, do similar array manipulations for this as suggested by comments in above loop like  correctAnswers[i]=x
+    while(!myFile2.eof())
+    {
+        myFile2>>x;
+        correctAnswers.push_back(x);
+    }
+    //if both vector size are not equal, print error, this is not required for array as both array have same count
+    if(correctAnswers.size()!=studentAnswers.size())
+    {
+        cout<<"Both files should have number of answers";
+        cin.get();
+    }
+    else
+    //else, compare each corresponding character
+    {
+    	//initialise missedQues and totalQues as 0
+    	//for array part, just have following part outside else, condition inside for loop will be i<20
+        int missedQues=0,totalQues=0;
+        //traverse through the vector
+        for(int i=0;i<correctAnswers.size()-1;i++)
+        {
+        	//increment question count
+            totalQues++;
+            //if character are not equal
+            if(correctAnswers[i]!=studentAnswers[i])
+            {
+            cout<<"Question "<<i+1<<": Answer provided = " <<studentAnswers[i];
+            cout<<" The Correct Answer = " <<correctAnswers[i]<<endl;
+            missedQues;
+            }
+        }
+        //if missedQues are not 0, display the error and accuracy, the following will be same for array
+        if(missedQues!=0)
+        {
+            cout<<"\nAbove questions were incorrect"<<endl;
+            cout<<"\nAccuracy Percentage is "<< fixed << showpoint << setprecision(2)<< (totalQues-missedQues)*100/totalQues;
+        }
+        //else display that all questions were correct
+        else
+        {
+            cout<<"\nAll questions correct, 100% accuracy";
+        }
+    }
+    //close both the files
+    myFile1.close();
+    myFile2.close();
+
+    cin.ignore();
+    cin.get();
+    return 0;
+}
