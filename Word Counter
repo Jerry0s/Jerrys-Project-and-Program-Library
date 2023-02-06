@@ -1,0 +1,36 @@
+#include<iostream>
+#include<string.h>
+#define SIZE 100
+using namespace std;
+
+int numWords(char str[]);
+
+int main ()
+{
+    char str[SIZE];
+
+    cout << "Jerry Ortega's Word Counter\n";
+    cout << "Enter a string : ";
+    cin.getline(str, SIZE);
+
+
+    cout << "Number of words in the string are: " << numWords(str) << endl;
+
+    cin.get();
+    cin.ignore();
+    return 0;
+
+}
+
+/*Function to calculate number of words*/
+int numWords(char str[])
+{
+    int count = 0, i;
+    for (i = 0; str[i] != '\0';i++)
+    {
+        if (str[i] == ' ')
+            count++;
+    }
+    return count + 1;
+}
+
