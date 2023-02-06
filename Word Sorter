@@ -1,0 +1,87 @@
+#include <iostream>
+using namespace std;
+
+//Function prototype
+void arrSelectSort(string *[], int);
+void arrBubbleSort(string *[], int);
+void showArray( const string [], int);
+void showArrPtr(string *[], int);
+
+int main()
+{
+    const int NUM_DONATIONS = 15;
+    nullptr = 0;
+
+    string donations[NUM_DONATIONS] = { "The", "Woods", "Are", "Lovely", "Dark",
+                                     "And", "Deep", "But", "I", "Have",
+                                     "Promises", "To", "Keep", "Robert", "Frost" };
+
+    string *arrPtr[NUM_DONATIONS] = { nullptr, nullptr, nullptr, nullptr, nullptr,
+                                   nullptr, nullptr, nullptr, nullptr, nullptr,
+                                   nullptr, nullptr, nullptr, nullptr, nullptr };
+
+    for(int count = 0 ; count < NUM_DONATIONS; count ++)
+        arrPtr[count] = &donations[count];
+
+    arrBubbleSort(arrPtr, NUM_DONATIONS);
+    cout << "The words sorted in ascending order, are: \n";
+    showArrPtr(arrPtr, NUM_DONATIONS);
+    cout << "The words in their original order, are: \n";
+    showArray(donations, NUM_DONATIONS);
+    return 0;
+}
+
+void arrBubbleSort(string *arr[], int size)
+{
+    int startScan;
+    string *minElem;
+
+    for(startScan = 0; startScan < (size - 1); startScan ++)
+    {
+        for(int index = 0; index < (size - startScan - 1); index ++)
+        {
+            if(*(arr[index]) > *(arr[index + 1]))
+            {
+                minElem = arr[index];
+                arr[index] = arr[index + 1];
+                arr[index + 1] = minElem;
+            }
+        }
+    }
+}
+
+void arrSelectSort(string *arr[], int size)
+{
+    int startScan, minIndex;
+    string *minElem;
+
+    for(startScan = 0; startScan < (size - 1); startScan ++)
+    {
+        minIndex = startScan;
+        minElem = arr[startScan];
+        for(int index = startScan + 1; index < size; index ++)
+        {
+            if(*(arr[index]) < *minElem)
+            {
+                minElem = arr[index];
+                minIndex = index;
+            }
+        }
+        arr[minIndex] = arr[startScan];
+        arr[startScan] = minElem;
+    }
+}
+
+void showArray(const string arr[], int size)
+{
+    for(int count=0; count < size; count++)
+        cout << arr[count] << " ";
+    cout << endl;
+}
+
+void showArrPtr(string *arr[], int size)
+{
+    for(int count=0; count < size; count++)
+        cout << *(arr[count]) << " ";
+    cout << endl;
+}
