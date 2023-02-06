@@ -1,0 +1,68 @@
+//Start
+#include<iostream>
+#include<fstream>
+#include<cstdlib>
+#include<iomanip>
+using namespace std;
+
+//Declarations
+const int MAXIMUMNUM = 20;
+
+int main()
+{
+    //Reads File
+    ifstream inputFile;
+
+    //Opens corresponding File for correctAnswers
+    inputFile.open("correctAnswers.txt");
+    char correctAnswers[MAXIMUMNUM];
+    for (int i=0;i<MAXIMUMNUM;i++)
+    {
+        if( !(inputFile >> correctAnswers[i]))
+        {
+            cout << "Your answers file has less than 20 entries.\n";
+            exit(0);
+        }
+    }
+    //Closes File
+    inputFile.close();
+
+    //Reads File
+    ifstream inFile;
+    //Opens corresponding File for studentAnswers
+    inFile.open("studentAnswers.txt");
+    char studentAnswers[MAXIMUMNUM];
+    for (int i=0;i<MAXIMUMNUM;i++)
+    {
+        if(!(inputFile >> correctAnswers[i]))
+        {
+            cout << "Your answers file has less than 20 entries.\n";
+            exit(0);
+        }
+    }
+    //Closes File
+    inFile.close();
+
+    int missedQues = 0;
+    int questNum;
+    double percentage;
+    cout << "Jerry Ortega's Exam Grader - Array Version\n";
+    for (int i=0;i<MAXIMUMNUM;i++)
+    {
+        if (correctAnswers[i]!=studentAnswers[i])
+        {
+            cout << "Question " << i+1 << ":Answer given =" <<studentAnswers[i] << "Correct Answer " << correctAnswers[i] << endl;
+            missedQues++;
+        }
+    }
+
+    //Caclulates the percentage then rounds by 2 decimal places
+    cout << fixed << showpoint << setprecision(2);
+    percentage = 100.00*(MAXIMUMNUM - missedQues)/MAXIMUMNUM;
+    cout << "The Percentage Correct is: " <<percentage << "%\n";
+
+    //End
+    cin.ignore();
+    cin.get();
+    return 0;
+}
