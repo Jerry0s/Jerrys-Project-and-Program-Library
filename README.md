@@ -78,7 +78,11 @@ This password verifier is a program that evaluates the strength of digital passw
 <details id=8>
 <summary><h2>Exam Grader (Array Version)</h2></summary>
 
-_You created a branch! :tada:_
+* Array Version - a data structure consisting of a collection of elements (values or variables), each identified by at least one array index or key.*
+
+The program will read a txt file that contains numbers of students' answers and reads it through in order to calculate the overall percentage and displays it by 2 decimal places. 
+
+You can try it out [here](https://github.com/Jerry0s/Jerrys-Project-Library/blob/main/Exam%20Grader%20(Array%20Version)!
 
 </details>
 
