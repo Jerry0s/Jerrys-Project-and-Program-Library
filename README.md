@@ -98,11 +98,9 @@ _You created a branch! :tada:_
 
 _You created a branch! :tada:_
 
+</details>
+  
 -----------------------------------
-<!-- 
-  <<< Author notes: Finish >>> 
-  Review what we learned, ask for feedback, provide next steps.
--->
 
 <details id=X open>
 <summary><h2>Finish</h2></summary>
