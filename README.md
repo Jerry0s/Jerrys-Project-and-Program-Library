@@ -1,6 +1,10 @@
 # Jerry's Project Fun Box
 
-_Welcome to "my public project database"! :wave:_
+<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" width="200" height="200" align=right>
+<img src="https://octodex.github.com/images/daftpunktocat-guy.gif"  alt=celebrate  height="200" align=right>
+
+_Welcome to my GitHub "Project database"! :wave:_ 
+
 
 <details id=1>
 <summary><h2>Fibonacci Sequence</h2></summary>
@@ -102,34 +106,19 @@ _You created a branch! :tada:_
   
 -----------------------------------
 
-<details id=X open>
-<summary><h2>Finish</h2></summary>
-
-_Congratulations friend, you've completed this course and joined the world of developers!_
+_Congratulations friend, you've gracefully made it to the end of my developer page!_:smile:
 
 <img src=https://octodex.github.com/images/collabocats.jpg alt=celebrate width=300 align=right>
 
-Here's a recap of your accomplishments:
+### What's next for me?
 
-- You learned about GitHub, repositories, branches, commits, and pull requests.
-- You created a branch, a commit, and a pull request.
-- You merged a pull request.
-- You made your first contribution! :tada:
+- Continuing to develop my coding skills and whenever I have an idea that I want to test out, I'll build it and post it here for everyone to see! 
 
-### What's next?
+Check out these resources to learn more or get involved with GitHub's community! 
 
-  If you'd like to make a profile README, use the simplified instructions below or follow the instructions in the [Managing your profile README](https://docs.github.com/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme) article.
-  1. Make a new public repository with a name that matches your GitHub username.
-  2. Create a file named `README.md` in its root. The "root" means not inside any folder in your repository.
-  3. Edit the contents of the `README.md` file.
-  4. If you created a new branch for your file, open and merge a pull request on your branch.
-  5. We'd love to see your new profile! Share your profile on social media and tag us!
-  6. Lastly, we'd love to hear what you thought of this course [in our discussion board](https://github.com/skills/.github/discussions).
-
-Check out these resources to learn more or get involved:
-- Are you a student? Check out the [Student Developer Pack](https://education.github.com/pack).
-- [Take another GitHub Skills course](https://github.com/skills).
-- [Read the GitHub Getting Started docs](https://docs.github.com/en/get-started).
+- For students: Check out the [Student Developer Pack](https://education.github.com/pack).
+- GitHub Skills courses (they helped a lot in building these pages) (https://github.com/skills).
+- Want to jumpstart your GitHub page? Check this doc out! (https://docs.github.com/en/get-started).
 - To find projects to contribute to, check out [GitHub Explore](https://github.com/explore).
 
 </details>
