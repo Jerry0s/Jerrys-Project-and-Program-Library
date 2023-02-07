@@ -1,9 +1,9 @@
-# Jerry's Project Fun Box
+# Jerry's Project Library
 
 <img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" width="200" height="200" align=right>
 <img src="https://octodex.github.com/images/daftpunktocat-guy.gif"  alt=celebrate  height="200" align=right>
 
-_Welcome to my GitHub "Project database"! :wave:_ 
+_Welcome to my GitHub ! :wave:_ 
 
 
 <details id=1>
@@ -24,14 +24,14 @@ That being said, I created a code that allows users to play around with the Fibo
 <details id=2>
 <summary><h2>Judge Scorer</h2></summary>
 
-_You created a branch! :tada:_
+This project takes 5 scores from 5 judges and then calc... [here] (https://github.com/Jerry0s/Jerrys-Project-Library/blob/main/Judge%20Scorer)
 
 </details>
 
 <details id=3>
 <summary><h2>Name Sorter</h2></summary>
 
-_You created a branch! :tada:_
+This project sorts out a list of names in alphabetical order. Users are able to input whatever name they wise and the program sorts i by looking through the functions of the arrays and the num of names within the array. You can try it out [here](https://github.com/Jerry0s/Jerrys-Project-Library/blob/main/Name%20Sorter)!
 
 </details>
 
@@ -52,14 +52,26 @@ _You created a branch! :tada:_
 <details id=6>
 <summary><h2>Statistics Program</h2></summary>
 
-_You created a branch! :tada:_
+*In order to utilize this program to its maximum capabilities, create a txt file (name can be anything) and input as many numbers as you like!*
+
+This program will create a file object and open it. If the file fails to be opened, the result will be False and will exit and display an error message. 
+
+If the file succeeds, the program will continue reading till the end of the file. Next, it would add the read number each time towards a variable sum. For exery number read, it will increment the counter. At the end, it will display the average of the file as a whole by dividing the sum by the count.
+
+Finally, as a result, it would display for the file;
+- number of numbers entered
+- the largest value
+- the smallest value
+- the average value
+
+You can try out the program [here](https://github.com/Jerry0s/Jerrys-Project-Library/blob/main/Statistics%20Program)!
 
 </details>
 
 <details id=7>
 <summary><h2>Password Verifier</h2></summary>
 
-_You created a branch! :tada:_
+This password verifier is a program that evaluates the strength of digital passwords. The verifier assesses the password's resilience to being guessed outright or cracked by cybercriminals using computer-automated hacking tools. You can try it out [here](https://github.com/Jerry0s/Jerrys-Project-Library/blob/main/Password%20Verifier)!
 
 </details>
 
