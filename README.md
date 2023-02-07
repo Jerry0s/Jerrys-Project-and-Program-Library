@@ -82,21 +82,25 @@ This password verifier is a program that evaluates the strength of digital passw
 
 The program will read a txt file that contains numbers of students' answers and reads it through in order to calculate the overall percentage and displays it by 2 decimal places. 
 
-You can try it out [here](https://github.com/Jerry0s/Jerrys-Project-Library/blob/main/Exam%20Grader%20(Array%20Version)!
+You can try it out [here](https://github.com/Jerry0s/Jerrys-Project-Library/blob/main/Exam%20Grader%20(Array%20Version))!
 
 </details>
 
 <details id=9>
 <summary><h2>Exam Grader (Vector Version)</h2></summary>
 
-_You created a branch! :tada:_
+* Vector Version - Implemented as dynamic arrays; Just as regular arrays, vector containers have their elements stored in contiguous storage locations, which means that their elements can be accessed not only using iterators but also using offsets on regular pointers to elements.
+
+The program will read a txt file that contains numbers of students' answers and reads it through in order to calculate the overall percentage and displays it by 2 decimal places. 
+
+You can try it out [here](https://github.com/Jerry0s/Jerrys-Project-Library/blob/main/Exam%20Grader%20(Vector%20Version))!
 
 </details>
 
 <details id=10>
 <summary><h2>Grade List (Array Expander)</h2></summary>
 
-_You created a branch! :tada:_
+* Array Expander - allows you to take a column of arrays and split each item in the array into its own row of data. This will effectively expand the rows of data you have to be at the granularity of each array item
 
 </details>
 
