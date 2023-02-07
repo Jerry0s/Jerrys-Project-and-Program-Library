@@ -9,7 +9,15 @@ _Welcome to my GitHub "Project database"! :wave:_
 <details id=1>
 <summary><h2>Fibonacci Sequence</h2></summary>
 
-_Welcome to "Introduction to GitHub"! :wave:_
+The Fibonacci sequence is a set of integers (the Fibonacci numbers) that starts with a zero, followed by a one, then by another one, and then by a series of steadily increasing numbers. The sequence follows the rule that each number is equal to the sum of the preceding two numbers.
+
+The Fibonacci sequence begins with the following 14 integers:
+
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233 ...
+
+Each number, starting with the third, adheres to the prescribed formula. For example, the seventh number, 8, is preceded by 3 and 5, which add up to 8.
+
+That being said, I created a code that allows users to play around with the Fibonacci sequence. You can try it out [here](https://github.com/Jerry0s/Jerrys-Project-Library/blob/main/Fibonacci%20Sequence)!
 
 </details>
 
