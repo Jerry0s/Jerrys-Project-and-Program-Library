@@ -100,35 +100,30 @@ You can try it out [here](https://github.com/Jerry0s/Jerrys-Project-Library/blob
 <details id=10>
 <summary><h2>Grade List (Array Expander)</h2></summary>
 
-* Array Expander - allows you to take a column of arrays and split each item in the array into its own row of data. This will effectively expand the rows of data you have to be at the granularity of each array item
+* Array Expander - allows you to take a column of arrays and split each item in the array into its own row of data. This will effectively expand the rows of data you have to be at the granularity of each array item.
+  
+This program displays the grades or numerical values of a file through array expanders. It also displays the orignal sizes of the array and the new array sizes. Try it out [here](https://github.com/Jerry0s/Jerrys-Project-Library/blob/main/Grade%20List%20-%20Array%20Expander)!
 
 </details>
 
 <details id=11>
-<summary><h2>Grade List (Array Finder)</h2></summary>
+<summary><h2>Median Finder</h2></summary>
 
-_You created a branch! :tada:_
+This project reads 2 different files, an ODD file that contains odd numbers and an EVEN file that contains even numbers. Users have the ability to choose which file they want to open and te program calculates the average/median total of chosen file. Try the program [here](https://github.com/Jerry0s/Jerrys-Project-Library/blob/main/Median%20Finder)!
 
 </details>
 
 <details id=12>
-<summary><h2>Median Finder</h2></summary>
+<summary><h2>Number Sorter (Least -> Greatest)</h2></summary>
 
-_You created a branch! :tada:_
+This program takes the values that it contains and orders each of them from least to greatest. Users can change the values to any number they wish! Try it out [here](https://github.com/Jerry0s/Jerrys-Project-Library/blob/main/Number%20Sorter%20(Least%20-%3E%20Greatest))
 
 </details>
 
 <details id=13>
-<summary><h2>Number Sorter (Least -> Greatest)</h2></summary>
-
-_You created a branch! :tada:_
-
-</details>
-
-<details id=14>
 <summary><h2>Student Overall Grader</h2></summary>
 
-_You created a branch! :tada:_
+This program reads two different files, 'studentAnswers' and 'correctAnswers'  and displays which questions are correct and incorrect. If there is a perfect score, the program will notify in the end that the file has '100% accuracy.' Try it out [here](https://github.com/Jerry0s/Jerrys-Project-Library/blob/main/Grader)
 
 </details>
   
