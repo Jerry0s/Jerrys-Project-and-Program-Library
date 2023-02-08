@@ -1,11 +1,17 @@
 # Jerry's Project & Program Library
 
 <img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" width="200" height="200" align=right>
-<img src="https://octodex.github.com/images/daftpunktocat-guy.gif"  alt=celebrate  height="200" align=right>
+<img src="https://octodex.github.com/images/daftpunktocat-guy.gif"  alt=celebrate  height="200" align=left>
 
 _Welcome to my GitHub Project Library! :wave:_ 
 
-_This repository is dedicated towards my past projects/programs that I have coded for fun in order to develop better skills in coding and learning new knowledge! :smiley:_
+This repository is dedicated towards my past projects/programs that I have coded for fun in order to develop better skills in coding and learning new knowledge! :smiley:
+
+Upcoming projects will be posted and updated on this repository for GitHub users to leverage and learn from!
+
+If you have any questions, please feel free to reach out! 👍
+
+</details>
 
 <details id=1>
 <summary><h2>Fibonacci Sequence</h2></summary>
@@ -47,6 +53,13 @@ This program highlights the number of words within a string. Try it out [here](h
 <summary><h2>Word Sorter</h2></summary>
 
 This program sorts out the given strings within it and sorts them through their original orders and ascending orders. Users are able to change the given set into anything they like. Try it out [here](https://github.com/Jerry0s/Jerrys-Project-Library/blob/main/Word%20Sorter)!
+
+</details>
+
+
+</details>
+
+<img style="display: block;-webkit-user-select: none;margin: auto;cursor: zoom-in;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="https://octodex.github.com/images/manufacturetocat.png" width="200" height="200" align=right>
 
 </details>
 
@@ -111,7 +124,7 @@ This program displays the grades or numerical values of a file through array exp
 <summary><h2>Median Finder</h2></summary>
 
 This project reads 2 different files, an ODD file that contains odd numbers and an EVEN file that contains even numbers. Users have the ability to choose which file they want to open and te program calculates the average/median total of chosen file. Try the program [here](https://github.com/Jerry0s/Jerrys-Project-Library/blob/main/Median%20Finder)!
-
+  
 </details>
 
 <details id=12>
