@@ -3,7 +3,7 @@
 <img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" width="200" height="200" align=right>
 <img src="https://octodex.github.com/images/daftpunktocat-guy.gif"  alt=celebrate  height="200" align=left>
 
-_Welcome to my GitHub Project Library! :wave:_ 
+_Welcome to my GitHub Project & Program Library! :wave:_ 
 
 This repository is dedicated towards my past projects/programs that I have coded for fun in order to develop better skills in coding and learning new knowledge! :smiley:
 
