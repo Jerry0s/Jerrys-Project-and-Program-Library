@@ -24,7 +24,7 @@ That being said, I created a code that allows users to play around with the Fibo
 <details id=2>
 <summary><h2>Judge Scorer</h2></summary>
 
-This project takes 5 scores from 5 judges and then calc... [here] (https://github.com/Jerry0s/Jerrys-Project-Library/blob/main/Judge%20Scorer)
+This program allows users to put 5 scores for 5 judges and it reads and calculates the average between the scores. Try it [here](https://github.com/Jerry0s/Jerrys-Project-Library/blob/main/Judge%20Scorer)!
 
 </details>
 
@@ -38,14 +38,14 @@ This project sorts out a list of names in alphabetical order. Users are able to 
 <details id=4>
 <summary><h2>Word Counter</h2></summary>
 
-_You created a branch! :tada:_
+This program highlights the number of words within a string. Try it out [here](https://github.com/Jerry0s/Jerrys-Project-Library/blob/main/Word%20Counter)!
 
 </details>
 
 <details id=5>
 <summary><h2>Word Sorter</h2></summary>
 
-_You created a branch! :tada:_
+This program sorts out the given strings within it and sorts them through their original orders and ascending orders. Users are able to change the given set into anything they like. Try it out [here](https://github.com/Jerry0s/Jerrys-Project-Library/blob/main/Word%20Sorter)!
 
 </details>
 
@@ -116,14 +116,14 @@ This project reads 2 different files, an ODD file that contains odd numbers and 
 <details id=12>
 <summary><h2>Number Sorter (Least -> Greatest)</h2></summary>
 
-This program takes the values that it contains and orders each of them from least to greatest. Users can change the values to any number they wish! Try it out [here](https://github.com/Jerry0s/Jerrys-Project-Library/blob/main/Number%20Sorter%20(Least%20-%3E%20Greatest))
+This program takes the values that it contains and orders each of them from least to greatest. Users can change the values to any number they wish! Try it out [here](https://github.com/Jerry0s/Jerrys-Project-Library/blob/main/Number%20Sorter%20(Least%20-%3E%20Greatest))!
 
 </details>
 
 <details id=13>
 <summary><h2>Student Overall Grader</h2></summary>
 
-This program reads two different files, 'studentAnswers' and 'correctAnswers'  and displays which questions are correct and incorrect. If there is a perfect score, the program will notify in the end that the file has '100% accuracy.' Try it out [here](https://github.com/Jerry0s/Jerrys-Project-Library/blob/main/Grader)
+This program reads two different files, 'studentAnswers' and 'correctAnswers'  and displays which questions are correct and incorrect. If there is a perfect score, the program will notify in the end that the file has '100% accuracy.' Try it out [here](https://github.com/Jerry0s/Jerrys-Project-Library/blob/main/Grader)!
 
 </details>
   
