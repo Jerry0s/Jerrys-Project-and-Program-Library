@@ -1,10 +1,11 @@
-# Jerry's Project Library
+# Jerry's Project & Program Library
 
 <img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" width="200" height="200" align=right>
 <img src="https://octodex.github.com/images/daftpunktocat-guy.gif"  alt=celebrate  height="200" align=right>
 
-_Welcome to my GitHub ! :wave:_ 
+_Welcome to my GitHub Project Library! :wave:_ 
 
+_This repository is dedicated towards my past projects/programs that I have coded for fun in order to develop better skills in coding and learning new knowledge! :smiley:_
 
 <details id=1>
 <summary><h2>Fibonacci Sequence</h2></summary>
