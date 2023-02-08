@@ -9,8 +9,6 @@ This repository is dedicated towards my past projects/programs that I have coded
 
 Upcoming projects will be posted and updated on this repository for GitHub users to leverage and learn from!
 
-If you have any questions, please feel free to reach out! 👍
-
 </details>
 
 <details id=1>
